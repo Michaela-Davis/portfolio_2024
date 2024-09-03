@@ -4,6 +4,7 @@
   max-width: 1200px;
   margin-inline: auto;
   padding-inline: 16px;
+  height: 100%;
 }
 
 .navbar {
@@ -28,16 +29,23 @@
 
 .hero {
 /* possibily a background image */
-  
+  height: clamp(600px, calc(90vh - 52px), 3000px);
 }
 
 .hero__wrapper {
   display: flex;
+  align-items: center;
+  height: 100%;
   border-bottom: 1px gray solid;
 }
 
 .hero__wrapper > div {
-  width: 50%;
+  display: grid;
+  gap: 16px;
+
+  @media (width >= 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .section-header {
@@ -46,20 +54,22 @@
 
 .skills__wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   border-bottom: 1px gray solid;
 
+  @media (width >= 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .project {
-  display: flex;
-  justify-items: stretch;
-  gap: var(--gap);
-  margin-bottom: var(--gap);
+
+  @media (width >= 768px) {
+    display: flex;
+    justify-items: stretch;
+    gap: var(--gap);
+    margin-bottom: var(--gap);
+  }
 }
 
 
 /* UTILITIES */
-.doubleWide {
-  grid-column: span 2;
-}

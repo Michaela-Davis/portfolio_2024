@@ -16,20 +16,23 @@ return (
   <div className="hero">
     <div className="container">
       <div className="hero__wrapper">
-      <div className="hero__name">
-        <h1>Michaela Davis</h1>
-      </div>
-      <div className="hero__description">
-        <h2>Engineer + Design Technologist</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iusto tempora velit hic sequi exercitationem ipsum
-          quisquam, consequatur repellendus doloribus libero labore ratione delectus ipsam molestiae deserunt unde
-          aliquam aut.
-        </p>
-      </div>
+        <div> 
+          <div className="hero__name">
+            <h1>Michaela Davis</h1>
+          </div>
+          <div className="hero__description">
+            <h2>Engineer + Design Technologist</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iusto tempora velit hic sequi exercitationem ipsum
+              quisquam, consequatur repellendus doloribus libero labore ratione delectus ipsam molestiae deserunt unde
+              aliquam aut.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+
   <div className="skills">
     <div className="container">
       <h2 className="section-header">Skills</h2>
