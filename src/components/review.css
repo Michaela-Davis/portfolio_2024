@@ -1,0 +1,35 @@
+.review {
+  background-color: rgb(30, 33, 38);
+  padding: 18px;
+  border-radius: 12px;
+}
+
+.review__author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.review__image {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  height: 56px;
+}
+
+.review__name-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.review__name {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.review__title {
+  font-size: 14px;
+  color: gray;
+}

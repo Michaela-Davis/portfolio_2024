@@ -1,4 +1,5 @@
 import './App.css';
+import { Review } from './components/Review';
 
 function App() {
 return (
@@ -13,15 +14,15 @@ return (
     </div>
   </nav>
 
-  <div className="hero">
+  <section className="hero">
     <div className="container">
       <div className="hero__wrapper">
         <div> 
           <div className="hero__name">
-            <h1>Michaela Davis</h1>
+            <h1 className='title-1'>Michaela Davis</h1>
           </div>
           <div className="hero__description">
-            <h2>Engineer + Design Technologist</h2>
+            <h2 className='title-1'>Engineer + Design Technologist</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iusto tempora velit hic sequi exercitationem ipsum
               quisquam, consequatur repellendus doloribus libero labore ratione delectus ipsam molestiae deserunt unde
@@ -31,27 +32,23 @@ return (
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div className="skills">
+  <section className="section skills">
     <div className="container">
-      <h2 className="section-header">Skills</h2>
-      <div className="skills__wrapper">
+      <h2 className="section__header">Skills</h2>
+      <div className="skill__wrapper">
         <ul className="skills__list">
           <li className="skills__item">React</li>
           <li className="skills__item">JavaScript / Typescript</li>
           <li className="skills__item"> HTML / CSS / SCSS
           </li>
           <li className="skills__item">Testing</li>
-        </ul>
-        <ul className="skills__list">
           <li className="skills__item">Design Systems</li>
           <li className="skills__item">Documentation / Storybook</li>
           <li className="skills__item">Design collaboration
           </li>
           <li className="skills__item">Figma</li>
-        </ul>
-        <ul className="skills__list">
           <li className="skills__item">Agile / Scrum</li>
           <li className="skills__item">Accessibility</li>
           <li className="skills__item">Automation</li>
@@ -59,11 +56,11 @@ return (
         </ul>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div className="projects">
+  <section className="section projects">
     <div className="container">
-      <h2 className="section-header">Projects</h2>
+      <h2 className="section__header">Projects</h2>
       <div className="projects__wrapper">
         <section className='project'>
           <div>
@@ -118,48 +115,53 @@ return (
         </section>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div className="reviews">
+  <section className="section reviews">
     <div className="container">
-      <h2 className="section-header">Reviews</h2>
+      <h2 className="section__header">Reviews</h2>
       <div className="reviews__wrapper">
-        <div className="review">
-          <blockquote>
-            I endorse Michaela Davis based on her contributions as a UX Engineer at Rocket. Her dedication to frontend engineering and design systems is evident. Within her role, Michaela demonstrated proficiency of Angular, React, and CSS to deliver features and components for our design system. Michaela played a crucial role in fostering collaboration between the design and engineering teams. Her knowledge of design and ability to work cross-functionally helped ensure that all voices were included in the process of building and maintaining Design System. Michaela's collaborative spirit, and desire to grow would make her an invaluable asset to any team. I am confident that she will continue to make significant contributions to any team and would not hesitate to recommend her.
-          </blockquote>
-        </div>
-        <div className="review">
-          <blockquote>
-            I worked closely with and mentored Michaela during our time together at Rocket Central. She consistently develops her skills and actively seeks out feedback to grow. She take advantage of learning opportunities, is curious and asks questions. She takes the time to try to understand why we make decisions as a team. She regularly collaborates with other teams to ensure that she is delivering performant and accessible code. Michaela is incredibly detail oriented and elevated our code review process with that skill. You can always rely on her work to be well thought out and accurate. She is an incredible asset as an engineer and team member. I would highly recommend Michaela to anyone that is looking to elevate their engineering team.
-          </blockquote>
-        </div>
-        <div className="review">
-          <blockquote>
-          Michaela is an outstanding User Experience (UX) Engineer and has made significant contributions to  our team and the overall success of Rocket. She possesses a rare combination of attention to detail,  problem solving mindset, and such a strong desire to learn and improve that she became a subject  matter expert on the Rocket Design System quickly after she arrived. This is sure to be seen in any  future endeavors she takes on. 
-          In addition to her technical capabilities, Michaela is an excellent team player and has an innate ability to  collaborate effectively with colleagues at all levels. Her positive attitude, enthusiasm, and willingness to  go the extra mile have greatly contributed to the positive work environment we have enjoyed in our  team. 
-
-          </blockquote>
-        </div>
-        <div className="review">
-          <blockquote>
-            Michaela is a smart, organized, and highly motivated software developer. She completed an internship with us in which she was tasked with a largely self-directed project. During her time with us, she developed an excellent working relationship with her teammate and with myself, and was able to deliver more functionality than I expected when we started the project. She always made the most of opportunities to gather feedback and assistance from more experienced developers, and always came prepared with a list of questions to make sure time spent assisting her was well spent.
-
-            I could see Michaela being a great addition to almost any team.
-          </blockquote>
-        </div>
+        <Review 
+          imgURL={'assets/rocket_mortgage_logo.jpeg'} imgAlt={'Rocket Mortgage'} name={'Yashita Reddy'} title={'Director of Engineering, Rocket Mortgage'} review={'I endorse Michaela Davis based on her contributions as a UX Engineer at Rocket. Her dedication to frontend engineering and design systems is evident. Within her role, Michaela demonstrated proficiency of Angular, React, and CSS to deliver features and components for our design system. Michaela played a crucial role in fostering collaboration between the design and engineering teams. Her knowledge of design and ability to work cross-functionally helped ensure that all voices were included in the process of building and maintaining Design System. Michaela\'s collaborative spirit, and desire to grow would make her an invaluable asset to any team. I am confident that she will continue to make significant contributions to any team and would not hesitate to recommend her.'}
+        />
+        <Review 
+          imgURL={'assets/elle-hillard.jpeg'} imgAlt={'Elle Hillard'} name={'Elle Hillard'} title={'RDS Engineering Manager, Rocket Mortgage'} review={'Michaela is an outstanding User Experience (UX) Engineer and has made significant contributions to  our team and the overall success of Rocket. She possesses a rare combination of attention to detail,  problem solving mindset, and such a strong desire to learn and improve that she became a subject  matter expert on the Rocket Design System quickly after she arrived. This is sure to be seen in any  future endeavors she takes on. In addition to her technical capabilities, Michaela is an excellent team player and has an innate ability to  collaborate effectively with colleagues at all levels. Her positive attitude, enthusiasm, and willingness to  go the extra mile have greatly contributed to the positive work environment we have enjoyed in our  team.'}
+        />
+        <Review 
+          imgURL={'assets/katie-guernsey.jpeg'} imgAlt={'Katie Guernsey'} name={'Katie Guernsey'} title={'Senior UX Engineer, Rocket Mortgage'} review={'I worked closely with and mentored Michaela during our time together at Rocket Central. She consistently develops her skills and actively seeks out feedback to grow. She take advantage of learning opportunities, is curious and asks questions. She takes the time to try to understand why we make decisions as a team. She regularly collaborates with other teams to ensure that she is delivering performant and accessible code. Michaela is incredibly detail oriented and elevated our code review process with that skill. You can always rely on her work to be well thought out and accurate. She is an incredible asset as an engineer and team member. I would highly recommend Michaela to anyone that is looking to elevate their engineering team.'}
+        />
+        <Review 
+          imgURL={'assets/jonathan-waltner.jpeg'} imgAlt={'Jonathan Waltner'} name={'Jonathan Waltner'} title={'Director of Engineering, Airship'} review={' Michaela is a smart, organized, and highly motivated software developer. She completed an internship with us in which she was tasked with a largely self-directed project. During her time with us, she developed an excellent working relationship with her teammate and with myself, and was able to deliver more functionality than I expected when we started the project. She always made the most of opportunities to gather feedback and assistance from more experienced developers, and always came prepared with a list of questions to make sure time spent assisting her was well spent. I could see Michaela being a great addition to almost any team'}
+        />
       </div>
     </div>
-  </div>
+  </section>
 
-  <div className="about">
+  <section className="section about">
     <div className="container">
-      <h2 className="section-header">About</h2>
+      <h2 className="section__header">About</h2>
       <div className="about__wrapper">
         <img src='/assets/michaela.jpeg' className='project__thumbnail' alt='Michaela headshot' />
       </div>
+      {/* <form action='https://formspree.io/michaela.delight@gmail.com' method='POST' className='row'>
+                  <div className='form-group col-12'>
+                    <label for='name'>Name:</label>
+                    <input type='text' name='name' placeholder='First Last' className='form__input'>
+                  </div>
+                  <div className='form-group col-12'>
+                    <label for='email'>Email:</label>
+                    <input type='email' name='_replyto' placeholder='address@email.com' className='form__input'>
+                  </div>
+                  <div className='form-group col-12'>
+                    <label for='textarea'>What would you like to talk about?</label>
+                    <textarea name='textarea' placeholder='Looking for a developer?' className='form__input'></textarea>
+                  </div>
+                  <div className='form-group col'>
+                    <input type='submit' value='Send'>
+                  </div>
+                </form> */}
     </div>
-  </div>
+  </section>
 
 </>
 );
