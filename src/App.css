@@ -82,17 +82,36 @@
 .projects__wrapper {
  display: grid;
  gap: 24px; 
- 
 }
 
 .project {
+  display: grid;
+  gap: 24px;
 
-  @media (width >= 768px) {
-    display: flex;
-    justify-items: stretch;
-    gap: var(--gap);
-    margin-bottom: var(--gap);
+  background-color: rgb(30, 33, 38);
+  padding: 18px;
+  border-radius: 12px;
+  
+  @media (width >= 768px) {  
+    grid-template-columns: 1fr 1fr;
   }
+}
+
+.project__title {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 2;
+}
+
+.project__sub-title {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.project__description {
+  line-height: 1.5;
+  font-size: 18px;
 }
 
 .section {
