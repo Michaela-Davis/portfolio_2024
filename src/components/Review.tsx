@@ -20,7 +20,7 @@ export const Review: React.FC<ReviewProps> = ({ imgURL, imgAlt, name, title, rev
           <p className="review__title">{title}</p>
         </div>
       </div>
-      <p>{review}</p>
+      <p className="review__body">{review}</p>
     </div>
   );
 }

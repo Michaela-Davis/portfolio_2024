@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
 .review__image {
@@ -20,7 +20,7 @@
 .review__name-title-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 4px;
 }
 
 .review__name {
@@ -32,4 +32,18 @@
 .review__title {
   font-size: 14px;
   color: gray;
+}
+
+.review__body {
+  margin-left: 8px;
+  position: relative;
+  font-size: 18px;
+  font-family: "Kalam", cursive;
+  line-height: 1.25;
+}
+
+.review__body::before {
+  content: "\"";
+  position: absolute;
+  left: -8px;
 }
