@@ -23,7 +23,7 @@ return (
           </div>
           <div className="hero__description">
             <h2 className='title-1'>Engineer + Design Technologist</h2>
-            <p>
+            <p className="hero__body">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iusto tempora velit hic sequi exercitationem ipsum
               quisquam, consequatur repellendus doloribus libero labore ratione delectus ipsam molestiae deserunt unde
               aliquam aut.
