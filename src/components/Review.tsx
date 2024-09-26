@@ -24,5 +24,3 @@ export const Review: React.FC<ReviewProps> = ({ imgURL, imgAlt, name, title, rev
     </div>
   );
 }
-
-// TO DO: reviews wrapper
