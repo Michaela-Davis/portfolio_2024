@@ -9,8 +9,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
-  color: white;
+  background-color: #0f1317;
+  color: #f0f5facc;
 }
 
 code {
@@ -18,10 +18,17 @@ code {
     monospace;
 }
 
+/* TO DO: links need states */
 a {
-  color: #3EB489;
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
 }
 
 h1, h2, h3, h4, p, ul, li {
   margin: 0;
+}
+
+h1, h2 {
+  color: white;
 }
