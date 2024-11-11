@@ -4,6 +4,7 @@ import { Review } from './components/Review';
 function App() {
 return (
 <>
+  {/* TO DO: Light/Dark mode is not MVP
   <nav className="navbar">
     <div className="container navbar__wrapper">
       <div className="logo">Logo</div>
@@ -12,7 +13,7 @@ return (
         <div className="navbar__item">(light / dark) </div>
       </div>
     </div>
-  </nav>
+  </nav> */}
 
   <section className="hero">
     <div className="container">

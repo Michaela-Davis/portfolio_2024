@@ -1,18 +1,19 @@
 /* LAYOUT */
 .container {
-  margin: 0 10px;
+  margin: 0 12px;
   max-width: 1200px;
   margin-inline: auto;
   padding-inline: 16px;
   height: 100%;
 }
 
-.navbar {
+/* TO DO: Light/Dark mode is not MVP */
+/* .navbar {
   position: sticky;
   top: 0;
   border-bottom: 1px gray solid;
   width: 100%;
-  background-color: black;
+  background-color: #0f1317;
 }
 
 .navbar__wrapper {
@@ -25,11 +26,10 @@
 .navbar__items {
   display: flex;
   gap: 8px;
-}
+} */
 
 .hero {
-/* possibily a background image */
-  height: clamp(600px, calc(50vh - 52px), 3000px);
+  height: clamp(600px, calc(60vh - 52px), 3000px);
 }
 
 .hero__wrapper {
@@ -51,6 +51,16 @@
 .hero__body {
   margin-top: 24px;
   line-height: 1.5;
+  font-size: 18px;
+}
+
+.hero__links {
+  margin-top: 24px;
+}
+
+.hero__link::after {
+  margin-right: 12px;
+  content: '↗';
 }
 
 .skills__wrapper {
@@ -76,29 +86,29 @@
 
 .skills__item {
   font-size: 24px;
-  line-height: 1.5
+  line-height: 1.5;
 }
 
 .projects__wrapper {
- display: grid;
- gap: 24px; 
-}
-
-.project {
   display: grid;
-  gap: 24px;
-
-  background-color: rgb(30, 33, 38);
-  padding: 18px;
-  border-radius: 12px;
-  
-  @media (width >= 768px) {  
-    grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  @media (width >= 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
+.project {
+  gap: 24px;
+  border-radius: 12px;
+}
+
+.project img {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
 .project__title {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
   line-height: 2;
 }
@@ -115,11 +125,11 @@
 }
 
 .section {
-  margin: 160px 0;
+  margin: 120px 0;
 }
 
 .section__header {
-  font-size: 36px;
+  font-size: 54px;
   margin-bottom: 24px;
 }
 
