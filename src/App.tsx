@@ -18,7 +18,7 @@ return (
   <section className="hero">
     <div className="container">
       <div className="hero__wrapper">
-        <div> 
+        <div>
           <div className="hero__name">
             <h1 className='title-1'>Michaela Davis</h1>
           </div>
@@ -39,7 +39,7 @@ return (
           </div>
         </div>
       </div>
-    </div>f
+    </div>
   </section>
 
   <section className="section projects">
