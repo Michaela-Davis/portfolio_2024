@@ -31,10 +31,10 @@ return (
               My primary expertise is front end and design system engineering, but I also have a strong understanding of UI/UX design principles and design system management and strategy. I built, tested, and deployed design system features like design tokens, components, and documentation, while also providing user support, educational material, and collaborating cross-functionally with our design partners during my most recent role as an engineer on the Rocket Design System team at <a href="https://www.rocketmortgage.com/" target="_blank" rel="noopener noreferrer">Rocket Mortgage</a>. 
             </p>
             <div className="hero__links">
-              <a href="https://www.linkedin.com/in/michaela-davis/" target="_blank" rel="noopener noreferrer" className="hero__link">LinkedIn</a>
-              <a href="https://github.com/Michaela-Davis?tab=overview&from=2020-12-01&to=2020-12-31" target="_blank" rel="noopener noreferrer" className="hero__link">GitHub</a>
-              <a href="https://www.figma.com/design/Gzdwltv04SG0BUYtokOiFx/Delightful-Design-System?node-id=0-1&m=dev&t=JvEJsDti93QNrtzZ-1" target="_blank" rel="noopener noreferrer" className="hero__link">Figma</a>
-              <a href="https://www.codewars.com/users/M%20Delight" target="_blank" rel="noopener noreferrer" className="hero__link">Codewars</a>
+              <a href="https://www.linkedin.com/in/michaela-davis/" target="_blank" rel="noopener noreferrer" className="hero__link">LinkedIn<i className="fa fa-arrow-up" aria-hidden="true"></i></a>
+              <a href="https://github.com/Michaela-Davis?tab=overview&from=2020-12-01&to=2020-12-31" target="_blank" rel="noopener noreferrer" className="hero__link">GitHub<i className="fa fa-arrow-up" aria-hidden="true"></i></a>
+              <a href="https://www.figma.com/design/Gzdwltv04SG0BUYtokOiFx/Delightful-Design-System?node-id=0-1&m=dev&t=JvEJsDti93QNrtzZ-1" target="_blank" rel="noopener noreferrer" className="hero__link">Figma<i className="fa fa-arrow-up" aria-hidden="true"></i></a>
+              <a href="https://www.codewars.com/users/M%20Delight" target="_blank" rel="noopener noreferrer" className="hero__link">Codewars<i className="fa fa-arrow-up" aria-hidden="true"></i></a>
             </div>
           </div>
         </div>

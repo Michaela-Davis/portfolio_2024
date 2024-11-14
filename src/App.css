@@ -58,9 +58,12 @@
   margin-top: 24px;
 }
 
-.hero__link::after {
-  margin-right: 12px;
-  content: '↗';
+.hero__link .fa.fa-arrow-up {
+  transform: rotate(45deg);
+  font-size: smaller;
+  margin-left: 4px;
+  margin-right: 16px;
+  color: #f0f5facc;
 }
 
 .skills__wrapper {

@@ -18,11 +18,19 @@ code {
     monospace;
 }
 
-/* TO DO: links need states */
 a {
   color: white;
   font-weight: bolder;
   text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: #3EB489;
+  text-decoration: underline;
+}
+
+a:visited, a:active {
+  color: #3EB489;
 }
 
 h1, h2, h3, h4, p, ul, li {
