@@ -30,6 +30,9 @@ return (
             <p className="hero__body">
               My primary expertise is front end and design system engineering, but I also have a strong understanding of UI/UX design principles and design system management and strategy. I built, tested, and deployed design system features like design tokens, components, and documentation, while also providing user support, educational material, and collaborating cross-functionally with our design partners during my most recent role as an engineer on the Rocket Design System team at <a href="https://www.rocketmortgage.com/" target="_blank" rel="noopener noreferrer">Rocket Mortgage</a>. 
             </p>
+            <p className="hero__body">
+              Please <a href="mailto:michaela.delight@gmail.com" target="_blank" rel="noopener noreferrer">reach out</a> if you would like to discuss opportunities. 
+            </p>
             <div className="hero__links">
               <a href="https://www.linkedin.com/in/michaela-davis/" target="_blank" rel="noopener noreferrer" className="hero__link">LinkedIn<i className="fa fa-arrow-up" aria-hidden="true"></i></a>
               <a href="https://github.com/Michaela-Davis?tab=overview&from=2020-12-01&to=2020-12-31" target="_blank" rel="noopener noreferrer" className="hero__link">GitHub<i className="fa fa-arrow-up" aria-hidden="true"></i></a>
@@ -61,8 +64,8 @@ return (
           <h2 className='project__title'>Puppet</h2>
           <h3 className='project__sub-title'>Senior Web Engineer</h3>
           <p className='project__description'>
-            Co-maintainer of Puppet.com: JAMstack including a decoupled React frontend with WordPress backend. My responsibilities include web engineering, page building, training, documentation, UI/UX and design implementation, analytics, content authoring support, and interfacing with stakeholders in departments
-            across the company. 
+            I was the co-maintainer of Puppet.com; a JAMstack site consisting of a decoupled custom React frontend with WordPress backend and many integrations such as Greenhouse and Marketo. My responsibilities include web engineering, page building, training, documentation, UI/UX and design implementation, analytics, content authoring support, and interfacing with stakeholders in departments
+            across the company. I also created engaging animated experiences like the Puppetize timeline and provided training, documentation, and support to streamline the page-building process for content authors.
           </p>
         </section>
 
@@ -72,10 +75,7 @@ return (
           <h2 className='project__title'>AAA NCNU</h2>
           <h3 className='project__sub-title'>Front End Software Engineer</h3>
           <p className='project__description'>
-            I did things. Co-maintainer of Puppet.com: JAMstack including a decoupled React frontend with WordPress
-            backend. My responsibilities include web engineering, page building, training, documentation, UI/UX and
-            design implementation, analytics, content authoring support, and interfacing with stakeholders in
-            departments across the company.
+            I reskinned previous Drupal sites, primarily leveraging PatternLab to maintain consistency and streamline the design process. I also built reusable components now actively in use on <a href="https://www.mwg.aaa.com/" target="_blank" rel="noopener noreferrer">mwg.aaa.com</a>, enhancing the site’s functionality and user experience. I created an internal cookie tool that simplifies working on sites tied to different zip codes which helped improve efficiency. Additionally, I delivered “Gherkin: A Primer” presentations to AAA Project Managers and the local Drupal User Group, teaching them how to write Gherkin testing statement, sfostering better alignment between AAA PMs and engineers.
           </p>
         </section>
       </div>
