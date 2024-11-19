@@ -2,6 +2,8 @@ import './App.css';
 import { Review } from './components/Review';
 
 function App() {
+  let currentYear = new Date().getFullYear()
+  
 return (
 <>
   {/* TO DO: Light/Dark mode is not MVP
@@ -166,6 +168,12 @@ return (
                 </form> */}
     </div>
   </section>
+
+  <footer className="section">
+    <div className="container">
+      <p>© {currentYear} Michaela Davis</p>
+    </div>
+  </footer>
 
 </>
 );
