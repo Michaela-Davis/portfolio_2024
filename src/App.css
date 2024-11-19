@@ -32,13 +32,14 @@
   height: clamp(600px, calc(60vh - 52px), 3000px);
 }
 
+.about__wrapper,
 .hero__wrapper {
   display: flex;
   align-items: center;
   height: 100%;
-  border-bottom: 1px gray solid;
 }
 
+.about__wrapper > div,
 .hero__wrapper > div {
   display: grid;
   gap: 36px;
@@ -48,6 +49,7 @@
   }
 }
 
+.about__body,
 .hero__body {
   margin-top: 24px;
   line-height: 1.5;
@@ -105,6 +107,7 @@
   border-radius: 12px;
 }
 
+.about img,
 .project img {
   border-radius: 12px;
   overflow: hidden;
@@ -145,6 +148,10 @@
   }
 }
 
+.about__description {
+  margin-top: auto;
+  margin-bottom: auto;
+}
 
 /* UTILITIES */
 .title-1 {

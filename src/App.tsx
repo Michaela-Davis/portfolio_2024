@@ -15,7 +15,7 @@ return (
     </div>
   </nav> */}
 
-  <section className="hero">
+  <section className="section hero">
     <div className="container">
       <div className="hero__wrapper">
         <div>
@@ -128,11 +128,26 @@ return (
 
   <section className="section about">
     <div className="container">
-      <h2 className="section__header">About</h2>
       <div className="about__wrapper">
-        <img src='/assets/michaela.jpeg' className='project__thumbnail' alt='Michaela headshot' />
+        <div>
+        <img src='/assets/michaela.png' className='about__thumbnail' alt='Michaela headshot' />
+        <div className="about__description">
+          <h2 className="section__header">About</h2>
+          <p className="about__body">
+            I’m an engineer at heart, but my journey has also made me a self-taught designer with a psychology degree, giving me a unique perspective on bridging the gaps between technical and creative disciplines. I’m passionate about fostering collaboration and communication across teams to create impactful, user-focused solutions.
+          </p>
+
+          <p className="about__body">
+            Outside of work, you might find me hiking in the great outdoors, diving into a good book, experimenting in the kitchen, or working on arts and crafts projects. I’ve spent the past decade enjoying life in beautiful Portland, Oregon, where my partner and I recently welcomed an adorable rescue cat into our home—she’s quickly become part of the family.
+          </p>
+
+          <p className="about__body">
+            I’m currently seeking new opportunities and would love to connect to discuss potential collaborations or the roles I’m exploring. Feel free to <a href="mailto:michaela.delight@gmail.com" target="_blank" rel="noopener noreferrer">reach out</a>!
+          </p>
+        </div>
+        </div>
       </div>
-      {/* <form action='https://formspree.io/michaela.delight@gmail.com' method='POST' className='row'>
+      {/* TO DO: Fix or remove this form <form action='https://formspree.io/michaela.delight@gmail.com' method='POST' className='row'>
                   <div className='form-group col-12'>
                     <label for='name'>Name:</label>
                     <input type='text' name='name' placeholder='First Last' className='form__input'>
