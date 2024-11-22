@@ -28,8 +28,34 @@
   gap: 8px;
 } */
 
+.section {
+  padding: 40px 0;
+  /* 1060px to match .hero break */
+  @media (width >= 1060px) {
+    padding: 64px 0;
+  }
+}
+
+.section__header {
+  font-size: 40px;
+  @media (width >= 768px) {
+    font-size: 52px;
+  }
+  margin-bottom: 24px;
+}
+
+img {
+  @media (width < 768px) {
+    max-height: 700px;
+  }
+}
+/* LAYOUT - END */
+
 .hero {
-  height: clamp(600px, calc(60vh - 52px), 3000px);
+  /* 1060px in an attempt to keep 'Projects' above fold */
+  @media (width >= 1060px) {
+    padding-top: 140px;
+  }
 }
 
 .about__wrapper,
@@ -58,6 +84,7 @@
 
 .hero__links {
   margin-top: 24px;
+  text-wrap: pretty;
 }
 
 .hero__link .fa.fa-arrow-up {
@@ -90,7 +117,10 @@
 }
 
 .skills__item {
-  font-size: 24px;
+  font-size: 20px;
+  @media (width >= 768px) {
+    font-size: 24px;
+  }
   line-height: 1.5;
 }
 
@@ -130,15 +160,6 @@
   font-size: 18px;
 }
 
-.section {
-  margin: 120px 0;
-}
-
-.section__header {
-  font-size: 54px;
-  margin-bottom: 24px;
-}
-
 .reviews__wrapper {
   display: grid;
   gap: 24px;
@@ -156,8 +177,8 @@
 /* UTILITIES */
 .title-1 {
   text-wrap: balance;
+  font-size: 48px;
   @media (width >= 768px) {
-    font-size: 3.75rem;
+    font-size: 60px;
   }
-
 }
