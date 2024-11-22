@@ -55,7 +55,7 @@ return (
           <img src='/assets/screenshots/rocket-mobile.png' className='project__thumbnail'
             alt='Rocket Mortgage' />
           <h2 className='project__title'>Rocket Mortgage</h2>
-          <h3 className='project__sub-title'>UX Engineer</h3>
+          <h3 className='project__sub-title'>UX Engineer (Software Engineer)</h3>
           <p className='project__description'>
             Rocket Design System (RDS) engineering team member for the Rocket Family of Companies. RDS serves over 45 products within the Rocket Family of Companies, including Rocket Mortgage, Rocket Auto Loans, and Rocket Money. I built and maintained UI components in React and Angular, documented and tested them, and collaborated with design to improve clarity and user experience. I created detailed engineering blueprints, led team discussions on technical paths, and developed a comprehensive video guide for onboarding engineers to the React library of the design system.
           </p>

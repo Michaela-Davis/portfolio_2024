@@ -31,6 +31,7 @@
 .section {
   padding: 40px 0;
   /* 1060px to match .hero break */
+
   @media (width >= 1060px) {
     padding: 64px 0;
   }
@@ -38,6 +39,7 @@
 
 .section__header {
   font-size: 40px;
+
   @media (width >= 768px) {
     font-size: 52px;
   }
@@ -46,7 +48,7 @@
 
 img {
   @media (width < 768px) {
-    max-height: 700px;
+    max-height: 450px;
   }
 }
 /* LAYOUT - END */
@@ -118,6 +120,7 @@ img {
 
 .skills__item {
   font-size: 20px;
+
   @media (width >= 768px) {
     font-size: 24px;
   }
@@ -127,6 +130,7 @@ img {
 .projects__wrapper {
   display: grid;
   gap: 36px;
+
   @media (width >= 768px) {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -135,9 +139,18 @@ img {
 .project {
   gap: 24px;
   border-radius: 12px;
+
+  @media (width < 768px) {
+    text-align: center;
+  }
 }
 
-.about img,
+.project:not(:last-child) {
+  @media (width < 768px) {
+    padding-bottom: 40px;
+  }
+}
+
 .project img {
   border-radius: 12px;
   overflow: hidden;
@@ -158,6 +171,10 @@ img {
 .project__description {
   line-height: 1.5;
   font-size: 18px;
+
+  @media (width < 768px) {
+    text-align: left;
+  }
 }
 
 .reviews__wrapper {
@@ -169,15 +186,21 @@ img {
   }
 }
 
+.about img {
+  border-radius: 12px;
+  overflow: hidden;
+  margin: auto;
+}
+
 .about__description {
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: auto 0;
 }
 
 /* UTILITIES */
 .title-1 {
   text-wrap: balance;
   font-size: 48px;
+
   @media (width >= 768px) {
     font-size: 60px;
   }
