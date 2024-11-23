@@ -7,27 +7,6 @@
   height: 100%;
 }
 
-/* TO DO: Light/Dark mode is not MVP */
-/* .navbar {
-  position: sticky;
-  top: 0;
-  border-bottom: 1px gray solid;
-  width: 100%;
-  background-color: #0f1317;
-}
-
-.navbar__wrapper {
-  padding: 16px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navbar__items {
-  display: flex;
-  gap: 8px;
-} */
-
 .section {
   padding: 40px 0;
   /* 1060px to match .hero break */
