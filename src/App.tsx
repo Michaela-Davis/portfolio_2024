@@ -77,7 +77,7 @@ return (
           <h2 className='project__title'>AAA NCNU</h2>
           <h3 className='project__sub-title'>Front End Software Engineer</h3>
           <p className='project__description'>
-            I reskinned previous Drupal sites, primarily leveraging PatternLab to maintain consistency and streamline the design process. I also built reusable components now actively in use on <a href="https://www.mwg.aaa.com/" target="_blank" rel="noopener noreferrer">mwg.aaa.com</a>, enhancing the site’s functionality and user experience. I created an internal cookie tool that simplifies working on sites tied to different zip codes which helped improve efficiency. Additionally, I delivered “Gherkin: A Primer” presentations to AAA Project Managers and the local Drupal User Group, teaching them how to write Gherkin testing statement, sfostering better alignment between AAA PMs and engineers.
+            I reskinned previous Drupal sites, primarily leveraging PatternLab to maintain consistency and streamline the design process. I also built reusable components now actively in use on <a href="https://www.mwg.aaa.com/" target="_blank" rel="noopener noreferrer">mwg.aaa.com</a>, enhancing the site’s functionality and user experience. I created an internal cookie tool that simplifies working on sites tied to different zip codes which helped improve efficiency. Additionally, I delivered “Gherkin: A Primer” presentations to AAA Project Managers and the local Drupal User Group, teaching them how to write Gherkin testing statement, fostering better alignment between AAA PMs and engineers.
           </p>
         </section>
       </div>
