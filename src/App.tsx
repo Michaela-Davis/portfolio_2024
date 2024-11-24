@@ -97,20 +97,20 @@ return (
       <h2 className="section__header">Skills</h2>
       <div className="skill__wrapper">
         <ul className="skills__list">
-          <li className="skills__item">React</li>
+          <li className="skills__item">React / Angular </li>
           <li className="skills__item">JavaScript / Typescript</li>
           <li className="skills__item"> HTML / CSS / SCSS
           </li>
-          <li className="skills__item">Testing</li>
+          <li className="skills__item">Testing / QA</li>
           <li className="skills__item">Design Systems</li>
           <li className="skills__item">Documentation / Storybook</li>
-          <li className="skills__item">Design collaboration
+          <li className="skills__item">Design Collaboration
           </li>
           <li className="skills__item">Figma</li>
           <li className="skills__item">Agile / Scrum</li>
           <li className="skills__item">Accessibility</li>
-          <li className="skills__item">Automation</li>
-          <li className="skills__item">Mentorship</li>
+          <li className="skills__item">Git</li>
+          <li className="skills__item">Tooling</li>
         </ul>
       </div>
     </div>
