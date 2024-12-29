@@ -11,7 +11,7 @@
   padding: 40px 0;
   /* 1060px to match .hero break */
 
-  @media (width >= 1060px) {
+  @media (min-width: 1060px) { 
     padding: 64px 0;
   }
 }
@@ -19,14 +19,14 @@
 .section__header {
   font-size: 40px;
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     font-size: 52px;
   }
   margin-bottom: 24px;
 }
 
 img {
-  @media (width < 768px) {
+  @media (max-width: 767px) {
     max-height: 450px;
   }
 }
@@ -34,7 +34,7 @@ img {
 
 .hero {
   /* 1060px in an attempt to keep 'Projects' above fold */
-  @media (width >= 1060px) {
+  @media (min-width: 1060px) {
     padding-top: 140px;
   }
 }
@@ -51,7 +51,7 @@ img {
   display: grid;
   gap: 36px;
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -80,7 +80,7 @@ img {
   display: grid;
   border-bottom: 1px gray solid;
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
@@ -88,11 +88,11 @@ img {
 .skills__list {
   padding-left: 36px;
 
-  @media (width >= 600px) {
+  @media (min-width: 600px) {
     column-count: 2;
   }
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     column-count: 3;
   }
 }
@@ -100,7 +100,7 @@ img {
 .skills__item {
   font-size: 20px;
 
-  @media (width >= 800px) {
+  @media (min-width: 800px) {
     font-size: 24px;
   }
   line-height: 1.5;
@@ -110,7 +110,7 @@ img {
   display: grid;
   gap: 36px;
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
@@ -119,13 +119,13 @@ img {
   gap: 24px;
   border-radius: 12px;
 
-  @media (width < 768px) {
+  @media (max-width: 767px) {
     text-align: center;
   }
 }
 
 .project:not(:last-child) {
-  @media (width < 768px) {
+  @media (max-width: 767px) {
     padding-bottom: 40px;
   }
 }
@@ -151,7 +151,7 @@ img {
   line-height: 1.5;
   font-size: 18px;
 
-  @media (width < 768px) {
+  @media (max-width: 767px) {
     text-align: left;
   }
 }
@@ -160,7 +160,7 @@ img {
   display: grid;
   gap: 24px;
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -180,7 +180,7 @@ img {
   text-wrap: balance;
   font-size: 48px;
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     font-size: 60px;
   }
 }
