@@ -32,13 +32,6 @@ img {
 }
 /* LAYOUT - END */
 
-.hero {
-  /* 1060px in an attempt to keep 'Projects' above fold */
-  @media (min-width: 1060px) {
-    padding-top: 140px;
-  }
-}
-
 .about__wrapper,
 .hero__wrapper {
   display: flex;
