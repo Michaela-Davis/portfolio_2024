@@ -38,3 +38,20 @@
   font-size: 16px;
   line-height: 1.50;
 }
+
+/* MODE - Light mode */
+[data-theme="light"] {
+  .review {
+    background-color: #f0f5facc;
+    border: .5px lightgray solid;
+
+    .review__title, .review__name, .review__body {
+      background-color: #f0f5facc;
+      color: #0f1317;
+    }
+
+    .review__title {
+      color: gray;
+    }
+  }
+}

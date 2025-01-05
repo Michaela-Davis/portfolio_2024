@@ -1,3 +1,4 @@
+/* LAYOUT - START */
 .container {
   margin: 0 12px;
   max-width: 1200px;
@@ -209,5 +210,18 @@
 
   @media (width >= 768px) {
     font-size: 60px;
+  }
+}
+
+/* MODE - Light mode */
+[data-theme="light"] {
+  .navbar {
+    background-color: #fff;
+    color: #0f1317;
+    border-bottom: .5px lightgray solid;
+  }
+
+  .hero__link .fa.fa-arrow-up {
+    color: gray;
   }
 }
