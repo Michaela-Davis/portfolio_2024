@@ -1,11 +1,27 @@
 import './App.css';
 import { Review } from './components/Review';
-
 function App() {
   let currentYear = new Date().getFullYear()
   
 return (
 <>
+  <nav className="navbar">
+    <div className="container navbar__wrapper">
+      <div className="logo">
+        {/* <a href="https://www.michaela-davis.com" className="navbar__link"><i className="fa fa-display fa-2x" aria-hidden="true"></i></a> */}
+        <a href="https://www.michaela-davis.com" className="navbar__link"><i className="fa-solid fa-house fa-2x" aria-hidden="true"></i></a>
+      </div>
+      <div className="navbar__items">
+        <div className="navbar__item">
+          <a href="mailto:michaela.delight+portfolio@gmail.com" className="navbar__link"><i className="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+        </div>
+        <div className="navbar__item">
+          <i className="fa-solid fa-circle-half-stroke fa-2x" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
   <section className="section hero">
     <div className="container">
       <div className="hero__wrapper">
