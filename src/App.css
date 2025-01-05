@@ -14,17 +14,22 @@
   background-color: #0f1317;
   z-index: 10;
 }
+
 .navbar__wrapper {
   padding: 24px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding-inline: 16px;
 }
+
 .navbar__items {
   display: flex;
   gap: 24px;
+
+  .navbar__item {
+    align-self: center;
+  }
 }
 
 .section {
@@ -32,7 +37,7 @@
   
   /* 1060px to match .hero break */
   @media (width >= 1060px) {
-    padding: 64px 0;
+    padding: 56px 0;
   }
 }
 
@@ -50,7 +55,7 @@
 .hero {
   /* 1060px in an attempt to keep 'Projects' above fold */
   @media (width >= 1060px) {
-    padding-top: 140px;
+    padding-top: 80px;
   }
 }
 
@@ -75,7 +80,11 @@
 .hero__body {
   margin-top: 24px;
   line-height: 1.5;
-  font-size: 18px;
+
+  font-size: 16px;
+  @media (width >= 1060px) {
+    font-size: 20px;
+  }
 }
 
 .hero__links {
@@ -164,10 +173,13 @@
 
 .project__description {
   line-height: 1.5;
-  font-size: 18px;
-
   @media (width < 768px) {
     text-align: left;
+  }
+
+  font-size: 16px;
+  @media (width >= 1060px) {
+    font-size: 20px;
   }
 }
 

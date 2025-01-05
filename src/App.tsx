@@ -8,7 +8,6 @@ return (
   <nav className="navbar">
     <div className="container navbar__wrapper">
       <div className="logo">
-        {/* <a href="https://www.michaela-davis.com" className="navbar__link"><i className="fa fa-display fa-2x" aria-hidden="true"></i></a> */}
         <a href="https://www.michaela-davis.com" className="navbar__link"><i className="fa-solid fa-house fa-2x" aria-hidden="true"></i></a>
       </div>
       <div className="navbar__items">
@@ -38,7 +37,7 @@ return (
               My primary expertise is front-end and design system engineering, but I also have a strong understanding of UI/UX design principles and design system management and strategy. I build, test, and deploy design system features such as design tokens, components, and documentation. I also provide compassionate user support and create educational materials. Additionally, I build meaningful group and individual relationships based on trust, enabling me to collaborate efficiently and cross-functionally. 
             </p>
             <p className="hero__body">
-              Please <a href="mailto:michaela.delight@gmail.com" target="_blank" rel="noopener noreferrer">reach out</a> if you would like to discuss opportunities. 
+              Please <a href="mailto:michaela.delight+portfolio@gmail.com" target="_blank" rel="noopener noreferrer">reach out</a> if you would like to discuss opportunities. 
             </p>
             <div className="hero__links">
               <a href="https://www.linkedin.com/in/michaela-davis/" target="_blank" rel="noopener noreferrer" className="hero__link">LinkedIn<i className="fa fa-arrow-up" aria-hidden="true"></i></a>
@@ -148,7 +147,7 @@ return (
           </p>
 
           <p className="about__body">
-            I’m currently seeking new opportunities and would love to connect to discuss potential collaborations or the roles I’m exploring. Feel free to <a href="mailto:michaela.delight@gmail.com" target="_blank" rel="noopener noreferrer">reach out</a>!
+            I’m currently seeking new opportunities and would love to connect to discuss potential collaborations or the roles I’m exploring. Feel free to <a href="mailto:michaela.delight+portfolio@gmail.com" target="_blank" rel="noopener noreferrer">reach out</a>!
           </p>
         </div>
         </div>
