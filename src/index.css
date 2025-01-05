@@ -16,12 +16,24 @@ body {
   color: #f0f5facc;
 }
 
+button {
+  width: 45px;
+  height: 40px;
+  background-color: #0f1317;
+  color: white;
+  border: none;
+
+  i {
+    font-size: 35px;
+  }
+}
+
 a, a:visited {
   color: white;
   font-weight: bolder;
   text-decoration: none;
 
-  @media (width >= 768px) {
+  @media (width >= 1060px) {
     font-size: 20px;
   }
 }
@@ -37,4 +49,20 @@ h1, h2, h3, h4, p, ul, li {
 
 h1, h2 {
   color: white;
+}
+
+/* MODE - Light mode */
+[data-theme="light"] {
+  body,
+  button,
+  a, a:visited,
+  h1, h2, h3, h4, p, ul, li {
+    background-color: #fff;
+    color: #0f1317;
+  }
+
+  a:hover, a:focus, a:active {
+    color: #3EB489;
+    text-decoration: underline;
+  }
 }

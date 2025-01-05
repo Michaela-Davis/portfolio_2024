@@ -1,8 +1,12 @@
-import './App.css';
+import { useState } from 'react';
 import { Review } from './components/Review';
+import './App.css';
+
 function App() {
-  let currentYear = new Date().getFullYear()
-  
+  let currentYear = new Date().getFullYear();
+
+  const [lightModeOn, setLightModeOn] = useState(false);
+
 return (
 <>
   <nav className="navbar">
@@ -15,7 +19,22 @@ return (
           <a href="mailto:michaela.delight+portfolio@gmail.com" className="navbar__link"><i className="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
         </div>
         <div className="navbar__item">
-          <i className="fa-solid fa-circle-half-stroke fa-2x" aria-hidden="true"></i>
+          {!lightModeOn && (
+            <button
+            type="button"
+            data-theme-toggle
+            aria-label="Change to dark theme"
+            onClick={ () => setLightModeOn(true)}
+          ><i className="fa-solid fa-sun" aria-hidden="true"></i></button>
+          )}
+          {lightModeOn && (
+            <button
+            type="button"
+            data-theme-toggle
+            aria-label="Change to light theme"
+            onClick={ () => setLightModeOn(false)}
+          ><i className="fa-solid fa-moon" aria-hidden="true"></i></button>
+          )}
         </div>
       </div>
     </div>
