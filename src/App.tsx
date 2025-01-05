@@ -27,7 +27,7 @@ return (
   <nav className="navbar">
     <div className="container navbar__wrapper">
       <div className="logo">
-        <a href="https://www.michaela-davis.com" className="navbar__link"><i className="fa-solid fa-house fa-2x" aria-hidden="true"></i></a>
+        <a href="https://www.michaela-davis.com" className="navbar__link"><i className="fa fa-house fa-2x" aria-hidden="true"></i></a>
       </div>
       <div className="navbar__items">
         <div className="navbar__item">
@@ -40,7 +40,7 @@ return (
             data-theme-toggle
             aria-label="Change to dark theme"
             onClick={ toggleTheme }
-          ><i className="fa-solid fa-sun" aria-hidden="true"></i></button>
+          ><i className="fa fa-sun" aria-hidden="true"></i></button>
           )}
           {lightModeOn && (
             <button
@@ -48,7 +48,7 @@ return (
             data-theme-toggle
             aria-label="Change to light theme"
             onClick={ toggleTheme }
-          ><i className="fa-solid fa-moon" aria-hidden="true"></i></button>
+          ><i className="fa fa-moon" aria-hidden="true"></i></button>
           )}
         </div>
       </div>
