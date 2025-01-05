@@ -7,6 +7,21 @@ function App() {
 
   const [lightModeOn, setLightModeOn] = useState(false);
 
+  const currentThemeSetting = (lightModeOn: boolean): string => {
+    return lightModeOn ? "light" : "dark";
+  };
+
+  const toggleTheme = () => {
+    const newTheme = currentThemeSetting(!lightModeOn);
+    setLightModeOn(!lightModeOn);
+
+    // Update the data-theme attribute in the HTML document
+    document.documentElement.setAttribute("data-theme", newTheme);
+
+    // Optionally, persist the theme in localStorage
+    localStorage.setItem("theme", newTheme);
+  };
+
 return (
 <>
   <nav className="navbar">
@@ -24,7 +39,7 @@ return (
             type="button"
             data-theme-toggle
             aria-label="Change to dark theme"
-            onClick={ () => setLightModeOn(true)}
+            onClick={ toggleTheme }
           ><i className="fa-solid fa-sun" aria-hidden="true"></i></button>
           )}
           {lightModeOn && (
@@ -32,7 +47,7 @@ return (
             type="button"
             data-theme-toggle
             aria-label="Change to light theme"
-            onClick={ () => setLightModeOn(false)}
+            onClick={ toggleTheme }
           ><i className="fa-solid fa-moon" aria-hidden="true"></i></button>
           )}
         </div>
