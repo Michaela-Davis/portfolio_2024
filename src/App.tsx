@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Review } from './components/Review';
+import { Work } from './components/Work';
 import './App.css';
 
 function App() {
@@ -26,12 +27,12 @@ return (
 <>
   <nav className="navbar">
     <div className="container navbar__wrapper">
-      <div className="logo">
-        <a href="https://www.michaela-davis.com" className="navbar__link"><i className="fa fa-home fa-2x" aria-hidden="true"></i></a>
+      <div className="home">
+        <a href="https://www.michaela-davis.com" className="navbar__link" aria-label="Michaela Davis Portfolio home"><i className="fa fa-home fa-2x" aria-hidden="true"></i></a>
       </div>
       <div className="navbar__items">
         <div className="navbar__item">
-          <a href="mailto:michaela.delight+portfolio@gmail.com" className="navbar__link"><i className="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+          <a href="mailto:michaela.delight+portfolio@gmail.com" className="navbar__link" aria-label="Email Michaela Davis"><i className="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
         </div>
         <div className="navbar__item">
           {!lightModeOn && (
@@ -55,6 +56,9 @@ return (
     </div>
   </nav>
   
+  <Work imgURL={'assets/screenshots/rocket-commits.png'} imgAlt={'Rocket Mortgage Github commits screenshot'}   name={'Rocket Mortgage'} title={'UX Engineer'} work={'Rocket Design System (RDS) engineering team member for the Rocket Family of Companies. RDS serves over 45 products within the Rocket Family of Companies, including Rocket Mortgage, Rocket Auto Loans, and Rocket Money. I built and maintained UI components in React and Angular, documented and tested them, and collaborated with design to improve clarity and user experience. I created detailed engineering blueprints, led team discussions on technical paths, and developed a comprehensive video guide for onboarding engineers to the React library of the design system.    COMPLETED an impressive amount of work being there a little over a year'}
+  />
+
   <section className="section hero">
     <div className="container">
       <div className="hero__wrapper">
