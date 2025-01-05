@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Review } from './components/Review';
 import { Work } from './components/Work';
 import './App.css';
@@ -15,13 +15,25 @@ function App() {
   const toggleTheme = () => {
     const newTheme = currentThemeSetting(!lightModeOn);
     setLightModeOn(!lightModeOn);
-
-    // Update the data-theme attribute in the HTML document
     document.documentElement.setAttribute("data-theme", newTheme);
-
-    // Optionally, persist the theme in localStorage
     localStorage.setItem("theme", newTheme);
   };
+
+  useEffect(() => {
+    const applyTheme = (theme: string) => {
+      setLightModeOn(theme === "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    };
+  
+    try {
+      const lightModeFromLocalStorage = localStorage.getItem("theme");
+      if (lightModeFromLocalStorage) {
+        applyTheme(lightModeFromLocalStorage);
+      }
+    } catch (error) {
+      console.error("Error accessing localStorage", error);
+    }
+  }, []);
 
 return (
 <>
