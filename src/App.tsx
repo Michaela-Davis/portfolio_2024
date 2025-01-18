@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Review } from './components/Review';
 import { Work } from './components/Work';
+
+import { Envelope, Sun } from './icons'; // I like these versions better
 import './App.css';
 
 function App() {
@@ -40,29 +42,78 @@ return (
   <nav className="navbar">
     <div className="container navbar__wrapper">
       <div className="home">
-        <a href="https://www.michaela-davis.com" className="navbar__link" aria-label="Michaela Davis Portfolio home"><i className="fa fa-home fa-2x" aria-hidden="true"></i></a>
+        <a href="https://www.michaela-davis.com" className="navbar__link" aria-label="Michaela Davis Portfolio home"><i id="home" className="fa fa-home" aria-hidden="false"></i></a>
       </div>
       <div className="navbar__items">
         <div className="navbar__item">
-          <a href="mailto:michaela.delight+portfolio@gmail.com" className="navbar__link" aria-label="Email Michaela Davis"><i className="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+          <a href="mailto:michaela.delight+portfolio@gmail.com" className="navbar__link" aria-label="Email Michaela Davis"><Envelope /></a>
         </div>
         <div className="navbar__item">
-          {!lightModeOn && (
-            <button
-            type="button"
-            data-theme-toggle
-            aria-label="Change to dark theme"
-            onClick={ toggleTheme }
-          ><i className="fa fa-sun-o fa-3x" aria-hidden="true"></i></button>
-          )}
-          {lightModeOn && (
-            <button
-            type="button"
-            data-theme-toggle
-            aria-label="Change to light theme"
-            onClick={ toggleTheme }
-          ><i className="fa fa-moon-o fa-3x" aria-hidden="true"></i></button>
-          )}
+
+          <label className="switch">
+            <input id="input" type="checkbox" checked={lightModeOn} onChange={toggleTheme} />
+            <div className="slider round">
+              <div className="sun-moon">
+                {!lightModeOn && (
+                  <Sun />
+                )}
+                {lightModeOn && (
+                  <i id="moon" className="fa fa-moon-o" aria-hidden="false"></i>
+                )}
+                <svg id="light-ray-1" className="light-ray" viewBox="0 0 100 100">
+                  <circle cx="50" cy="50" r="50"></circle>
+                </svg>
+                <svg id="light-ray-2" className="light-ray" viewBox="0 0 100 100">
+                  <circle cx="50" cy="50" r="50"></circle>
+                </svg>
+                <svg id="light-ray-3" className="light-ray" viewBox="0 0 100 100">
+                  <circle cx="50" cy="50" r="50"></circle>
+                </svg>
+
+                <svg id="cloud-1" className="cloud-dark" viewBox="0 0 100 100">
+                  <circle cx="50" cy="50" r="50"></circle>
+                </svg>
+                <svg id="cloud-2" className="cloud-dark" viewBox="0 0 100 100">
+                  <circle cx="50" cy="50" r="50"></circle>
+                </svg>
+                <svg id="cloud-3" className="cloud-dark" viewBox="0 0 100 100">
+                  <circle cx="50" cy="50" r="50"></circle>
+                </svg>
+                <svg id="cloud-4" className="cloud-light" viewBox="0 0 100 100">
+                  <circle cx="50" cy="50" r="50"></circle>
+                </svg>
+                <svg id="cloud-5" className="cloud-light" viewBox="0 0 100 100">
+                  <circle cx="50" cy="50" r="50"></circle>
+                </svg>
+                <svg id="cloud-6" className="cloud-light" viewBox="0 0 100 100">
+                  <circle cx="50" cy="50" r="50"></circle>
+                </svg>
+              </div>
+              <div className="stars">
+                <svg id="star-1" className="star" viewBox="0 0 20 20">
+                  <path
+                    d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+                  ></path>
+                </svg>
+                <svg id="star-2" className="star" viewBox="0 0 20 20">
+                  <path
+                    d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+                  ></path>
+                </svg>
+                <svg id="star-3" className="star" viewBox="0 0 20 20">
+                  <path
+                    d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+                  ></path>
+                </svg>
+                <svg id="star-4" className="star" viewBox="0 0 20 20">
+                  <path
+                    d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </label>
+
         </div>
       </div>
     </div>
@@ -92,7 +143,7 @@ return (
             <div className="hero__links">
               <a href="https://www.linkedin.com/in/michaela-davis/" target="_blank" rel="noopener noreferrer" className="hero__link">LinkedIn<i className="fa fa-arrow-up" aria-hidden="true"></i></a>
               <a href="https://github.com/Michaela-Davis?tab=overview&from=2020-12-01&to=2020-12-31" target="_blank" rel="noopener noreferrer" className="hero__link">GitHub<i className="fa fa-arrow-up" aria-hidden="true"></i></a>
-              <a href="https://www.figma.com/design/Gzdwltv04SG0BUYtokOiFx/Delightful-Design-System?node-id=0-1&m=dev&t=JvEJsDti93QNrtzZ-1" target="_blank" rel="noopener noreferrer" className="hero__link">Figma<i className="fa fa-arrow-up" aria-hidden="true"></i></a>
+              {/* <a href="https://www.figma.com/design/Gzdwltv04SG0BUYtokOiFx/Delightful-Design-System?node-id=0-1&m=dev&t=JvEJsDti93QNrtzZ-1" target="_blank" rel="noopener noreferrer" className="hero__link">Figma<i className="fa fa-arrow-up" aria-hidden="true"></i></a> */}
               <a href="https://www.codewars.com/users/M%20Delight" target="_blank" rel="noopener noreferrer" className="hero__link">Codewars<i className="fa fa-arrow-up" aria-hidden="true"></i></a>
             </div>
           </div>
