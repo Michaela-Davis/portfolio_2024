@@ -1,0 +1,8 @@
+import { Work } from "./Work";
+const Aaa = () => {
+  return (
+    <Work imgURL={'assets/screenshots/mwg.aaa.com-landscape.png'} imgAlt={'Rocket Mortgage Github commits screenshot'}   companyName={'AAA NCNU'} title={'Front-end Engineer'} work={'I reskinned previous Drupal sites, primarily leveraging PatternLab to maintain consistency and streamline the design process. I also built reusable components actively in use on mwg.aaa.com, enhancing the site’s functionality and user experience. I created an internal cookie tool that simplifies working on sites tied to different zip codes, which helped improve efficiency. Additionally, I delivered “Gherkin: A Primer” presentations to AAA Project Managers and the local Drupal User Group, teaching them how to write Gherkin testing statements, and fostering better alignment between AAA PMs and engineers.'} scope={'Front-End, Design System, Engineering'} role={'Front-End Software Engineer'} year={'2018'} companyBlurb={'For over a century, AAA has been a reliable companion for travelers and drivers across the nation. Known for its exceptional roadside assistance, AAA offers a wide range of services, including auto repair recommendations, travel planning, and exclusive discounts. Whether you’re hitting the open road, booking a vacation, or ensuring your car is ready for the journey, AAA provides peace of mind and unparalleled support every step of the way.'} img2URL={''} img2Alt={''} skills={"Front-End - CSS - Twig - Javascript"} stack={"Decoupled Drupal, Coupled Drupal"} live={"https://mwg.aaa.com/"}/>
+  );
+}
+
+export default Aaa;

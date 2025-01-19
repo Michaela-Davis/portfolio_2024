@@ -4,7 +4,8 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import Navbar from './components/Navbar';
 import App from './App';
 import Rocket from './components/Rocket';
-// import Puppet from './components/Puppet';
+import Puppet from './components/Puppet';
+import Aaa from './components/Aaa';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
 
@@ -18,8 +19,8 @@ root.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="rocket" element={<Rocket />} />
-        {/* <Route path="puppet element={<Puppet />} /> */}
-        {/* <Route path="aaa" element={<Work />} /> */}
+        <Route path="puppet" element={<Puppet />} />
+        <Route path="aaa" element={<Aaa />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

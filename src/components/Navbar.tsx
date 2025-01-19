@@ -36,11 +36,11 @@ function Navbar() {
       <nav className="navbar">
         <div className="container navbar__wrapper">
           <div className="home">
-            <a href="https://www.michaela-davis.com" className="navbar__link" aria-label="Michaela Davis Portfolio home"><i id="home" className="fa fa-home" aria-hidden="false"></i></a>
+            <a href="/" className="navbar__link" aria-label="Michaela Davis Portfolio home"><i id="home" className="fa fa-home" aria-hidden="false"></i></a>
           </div>
           <div className="navbar__items">
             <div className="navbar__item">
-              <a href="mailto:michaela.delight+portfolio@gmail.com" className="navbar__link" aria-label="Email Michaela Davis"><Envelope /></a>
+              <a href="mailto:michaela.delight+portfolio@gmail.com" className="navbar__link" aria-label="Email Michaela Davis" target="_blank"><Envelope /></a>
             </div>
             <div className="navbar__item">
     
