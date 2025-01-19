@@ -41,6 +41,10 @@ a, a:visited {
 a:hover, a:focus, a:active {
   color: #3EB489;
   text-decoration: underline;
+
+  svg#envelope {
+    fill: #3EB489;
+  }
 }
 
 h1, h2, h3, h4, p, ul, li {
@@ -64,5 +68,9 @@ h1, h2 {
   a:hover, a:focus, a:active {
     color: #3EB489;
     text-decoration: underline;
+
+    svg#envelope {
+      fill: #3EB489;
+    }
   }
 }
