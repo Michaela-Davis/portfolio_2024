@@ -32,6 +32,19 @@
   color: lightgray;
 }
 
+.work__info-wrapper {
+  padding: 20px;
+}
+
+.work__info-wrapper > div {
+  display: grid;
+  gap: 20px;
+
+  @media (width >= 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 /* MODE - Light mode */
 [data-theme="light"] {
   .work {

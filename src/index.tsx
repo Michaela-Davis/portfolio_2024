@@ -1,15 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import { BrowserRouter, Routes, Route } from "react-router";
+import Navbar from './components/Navbar';
 import App from './App';
+import Rocket from './components/Rocket';
+// import Puppet from './components/Puppet';
 import reportWebVitals from './reportWebVitals';
+import './index.css';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="rocket" element={<Rocket />} />
+        {/* <Route path="puppet element={<Puppet />} /> */}
+        {/* <Route path="aaa" element={<Work />} /> */}
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
