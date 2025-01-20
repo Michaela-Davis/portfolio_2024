@@ -129,6 +129,12 @@
   }
 }
 
+.project__link {
+  .fa-arrow-up {
+    transform: rotate(90deg)
+  }
+}
+
 .overlay__text {
   display: none;
   color: white;

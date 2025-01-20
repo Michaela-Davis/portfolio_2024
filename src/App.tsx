@@ -157,7 +157,7 @@ return (
 
   <footer className="section">
     <div className="container">
-      <p>© {currentYear} Michaela Davis</p>
+      <p>© 2024-{currentYear} Michaela Davis</p>
     </div>
   </footer>
 </>
