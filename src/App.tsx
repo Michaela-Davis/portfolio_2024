@@ -154,12 +154,6 @@ return (
       </div>
     </div>
   </section>
-
-  <footer className="section">
-    <div className="container">
-      <p>© 2024-{currentYear} Michaela Davis</p>
-    </div>
-  </footer>
 </>
 );
 }

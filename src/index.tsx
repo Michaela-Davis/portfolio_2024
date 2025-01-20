@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router";
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import App from './App';
 import Rocket from './components/Rocket';
 import Puppet from './components/Puppet';
@@ -22,6 +23,7 @@ root.render(
         <Route path="puppet" element={<Puppet />} />
         <Route path="aaa" element={<Aaa />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   </React.StrictMode>
 );
