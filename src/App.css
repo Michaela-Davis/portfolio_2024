@@ -132,7 +132,7 @@
   font-size: 28px;
   text-align: center;
 
-  @media (width >= 768px) {
+  @media (width >= 1060px) {
     font-size: 40px;
   }
 
@@ -140,7 +140,6 @@
     transform: rotate(45deg);
     font-size: smaller;
     margin-left: 4px;
-    margin-right: 16px;
     color: white;
   }
 }
