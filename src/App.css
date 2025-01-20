@@ -30,6 +30,9 @@
 
 /* LAYOUT - END */
 
+/* ------------------------------------------------------- */
+
+/* APP - START */
 .fa.fa-arrow-up {
   transform: rotate(45deg);
   font-size: smaller;
@@ -232,7 +235,9 @@
   margin: auto 0;
 }
 
-/* UTILITIES */
+/* ------------------------------------------------------- */
+
+/* UTILITIES - START */
 .title-1 {
   text-wrap: balance;
   font-size: 48px;
@@ -241,6 +246,17 @@
     font-size: 60px;
   }
 }
+
+.grayText {
+  color: gray;
+}
+
+.textAlignLeft {
+  text-align: left;
+}
+/* UTILITIES - Start */
+
+/* ------------------------------------------------------- */
 
 /* MODE - 💡 Light mode */
 [data-theme="light"] {
