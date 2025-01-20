@@ -18,6 +18,10 @@
   .fa-home:before {
     font-size: 40px;
   }
+  /* Prevents home icon from staying teal after clicked, happened when switched to <Link/> */
+  #home:focus {
+    color: white;
+  }
 
   /* Moon Icon */
   .fa-moon:before {
@@ -31,6 +35,11 @@
     height: 40px;
     fill: white;
     padding-top: 4px;
+  }
+  a:hover, a:focus, a:active {
+    svg#envelope {
+      fill: #3EB489;
+    }
   }
 }
 
@@ -300,6 +309,10 @@
   .navbar {
     .stars svg.star {
       fill: #f4e98c;
+    }
+
+    #home:focus {
+      color: #0f1317;
     }
   }
 }

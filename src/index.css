@@ -16,18 +16,6 @@ body {
   color: #f0f5facc;
 }
 
-button {
-  width: 45px;
-  height: 40px;
-  background-color: #0f1317;
-  color: white;
-  border: none;
-
-  i {
-    font-size: 35px;
-  }
-}
-
 a, a:visited {
   color: white;
   font-weight: bolder;
@@ -41,10 +29,6 @@ a, a:visited {
 a:hover, a:focus, a:active {
   color: #3EB489;
   text-decoration: underline;
-
-  svg#envelope {
-    fill: #3EB489;
-  }
 }
 
 h1, h2, h3, h4, p, ul, li {
@@ -71,9 +55,5 @@ h1, h2 {
   a:hover, a:focus, a:active {
     color: #3EB489;
     text-decoration: underline;
-
-    svg#envelope {
-      fill: #3EB489;
-    }
   }
 }

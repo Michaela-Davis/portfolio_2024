@@ -200,7 +200,6 @@
   }
 }
 
-
 .project__link:hover {
   .fa.fa-arrow-up {
     color: white;
@@ -253,6 +252,12 @@
 
   .overlay__text {
     color: white;
+  }
+
+  .project__link {
+    .fa.fa-arrow-up {
+      color: gray;
+    }
   }
 }
 /* MODE - Light mode END */

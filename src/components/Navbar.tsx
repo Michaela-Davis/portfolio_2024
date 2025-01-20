@@ -36,9 +36,7 @@ function Navbar() {
   return (
       <nav className="navbar">
         <div className="container navbar__wrapper">
-          <div className="home">
-            <Link to="/"className="navbar__link" aria-label="Michaela Davis Portfolio home"><i id="home" className="fa fa-home" aria-hidden="false"></i></Link>
-          </div>
+          <Link to="/"className="navbar__link" aria-label="Michaela Davis Portfolio home" id="home"><i className="fa fa-home" aria-hidden="false"></i></Link>
           <div className="navbar__items">
             <div className="navbar__item">
               <a href="mailto:michaela.delight+portfolio@gmail.com" className="navbar__link" aria-label="Email Michaela Davis" target="_blank"><Envelope /></a>
