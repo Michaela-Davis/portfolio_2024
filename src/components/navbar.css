@@ -18,7 +18,7 @@
   .fa-home:before {
     font-size: 40px;
   }
-  /* Prevents home icon from staying teal after clicked, happened when switched to <Link/> */
+  /* 🐛 Prevents home icon from staying teal after clicked, happened when switched to <Link/> */
   #home:focus {
     color: white;
   }
@@ -52,7 +52,7 @@
   }
 }
 
-/* TOGGLE for light/dark mode */
+/* TOGGLE for 💡 light/dark mode */
 .switch {
   position: relative;
   display: inline-block;
@@ -304,7 +304,7 @@
   }
 }
 
-/* MODE - Light mode */
+/* MODE - 💡 Light mode */
 [data-theme="light"] {
   .navbar {
     .stars svg.star {

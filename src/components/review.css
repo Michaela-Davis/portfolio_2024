@@ -40,7 +40,7 @@
   font-weight: normal;
 }
 
-/* MODE - Light mode */
+/* MODE - 💡 Light mode */
 [data-theme="light"] {
   .review {
     background-color: #f0f5facc;

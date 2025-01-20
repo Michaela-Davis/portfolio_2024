@@ -39,7 +39,7 @@ h1, h2 {
   color: white;
 }
 
-/* MODE - Light mode */
+/* MODE - 💡 Light mode */
 [data-theme="light"] {
   body {
     background-color: #fff;

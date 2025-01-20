@@ -159,7 +159,7 @@
     position: absolute;
     top: auto;
     left: auto;
-    /* This prevents a flicker bug */
+    /* 🐛 This prevents a flicker bug */
     pointer-events: none;
   }
 }
@@ -241,7 +241,7 @@
   }
 }
 
-/* MODE - Light mode */
+/* MODE - 💡 Light mode */
 [data-theme="light"] {
   .navbar {
     background-color: #fff;
