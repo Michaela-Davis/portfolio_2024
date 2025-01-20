@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router';
 
 import { Envelope, Sun } from '../icons'; // I like these versions better
 import './navbar.css';
@@ -36,7 +37,7 @@ function Navbar() {
       <nav className="navbar">
         <div className="container navbar__wrapper">
           <div className="home">
-            <a href="/" className="navbar__link" aria-label="Michaela Davis Portfolio home"><i id="home" className="fa fa-home" aria-hidden="false"></i></a>
+            <Link to="/"className="navbar__link" aria-label="Michaela Davis Portfolio home"><i id="home" className="fa fa-home" aria-hidden="false"></i></Link>
           </div>
           <div className="navbar__items">
             <div className="navbar__item">
