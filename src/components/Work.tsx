@@ -20,7 +20,6 @@ interface WorkProps {
 
 export const Work: React.FC<WorkProps> = ({ imgURL, img2URL, imgAlt, img2Alt, companyName, title, work, scope, role, year, companyBlurb, skills, stack, live }) => {
   return (
-    <section className="section hero">
       <div className="container work">
         <div className="work__name-title-wrapper">
           <h1 className="work__name">{companyName}</h1>
@@ -54,6 +53,5 @@ export const Work: React.FC<WorkProps> = ({ imgURL, img2URL, imgAlt, img2Alt, co
           </div>
         </div>
       </div>
-    </section>
   );
 }
