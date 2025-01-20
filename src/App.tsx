@@ -43,6 +43,7 @@ return (
         <section className='project'>
           <a href="/rocket" className="project__link">
             <img src='/assets/screenshots/rocket-mobile.png' className='project__thumbnail' alt='Rocket Mortgage' />
+            <p className="overlay__text">Learn more <i className="fa fa-arrow-up" aria-hidden="true"></i></p>
           </a>
           <h2 className='project__title'>Rocket Mortgage</h2>
           <h3 className='project__sub-title'>UX Engineer (Software Engineer)</h3>
@@ -54,6 +55,7 @@ return (
         <section className='project'>
           <a href="/puppet" className="project__link">
             <img src='/assets/screenshots/puppet-mobile.png' className='project__thumbnail' alt='Puppet homepage' />
+            <p className="overlay__text">Learn more <i className="fa fa-arrow-up" aria-hidden="true"></i></p>
           </a>
           <h2 className='project__title'>Puppet</h2>
           <h3 className='project__sub-title'>Senior Web Engineer</h3>
@@ -64,8 +66,8 @@ return (
 
         <section className='project'>
           <a href="/aaa" className="project__link">
-            <img src='/assets/screenshots/mwg-aaa-mobile.png' className='project__thumbnail'
-              alt='AAA Mountain West Group homepage' />
+            <img src='/assets/screenshots/mwg-aaa-mobile.png' className='project__thumbnail' alt='AAA Mountain West Group homepage' />
+            <p className="overlay__text">Learn more <i className="fa fa-arrow-up" aria-hidden="true"></i></p>
           </a>
           <h2 className='project__title'>AAA NCNU</h2>
           <h3 className='project__sub-title'>Front-End Software Engineer</h3>
