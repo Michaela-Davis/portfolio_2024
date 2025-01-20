@@ -153,6 +153,8 @@
     position: absolute;
     top: auto;
     left: auto;
+    /* This prevents a flicker bug */
+    pointer-events: none;
   }
 }
 
