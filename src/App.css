@@ -147,6 +147,7 @@
 
   .fa.fa-arrow-up {
     color: white;
+    transform: rotate(90deg)
   }
 }
 
