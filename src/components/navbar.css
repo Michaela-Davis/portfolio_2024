@@ -288,10 +288,19 @@
   }
 }
 
-
 /* Tone down the animation to avoid vestibular motion triggers. */
 @media (prefers-reduced-motion) {
   .switch {
     animation-iteration-count: none;
   }
 }
+
+/* MODE - Light mode */
+[data-theme="light"] {
+  .navbar {
+    .stars svg.star {
+      fill: #f4e98c;
+    }
+  }
+}
+/* MODE - Light mode END */

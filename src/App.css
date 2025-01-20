@@ -30,6 +30,12 @@
 
 /* LAYOUT - END */
 
+.fa.fa-arrow-up {
+  transform: rotate(45deg);
+  font-size: smaller;
+  margin-left: 4px;
+}
+
 .hero {
   /* 1060px in an attempt to keep 'Projects' above fold */
   @media (width >= 1060px) {
@@ -71,9 +77,6 @@
 }
 
 .hero__link .fa.fa-arrow-up {
-  transform: rotate(45deg);
-  font-size: smaller;
-  margin-left: 4px;
   margin-right: 16px;
   color: #f0f5facc;
 }
@@ -137,9 +140,6 @@
   }
 
   .fa.fa-arrow-up {
-    transform: rotate(45deg);
-    font-size: smaller;
-    margin-left: 4px;
     color: white;
   }
 }
@@ -158,7 +158,7 @@
   }
 }
 
-.project__link {
+.project__img--overlay-text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -189,6 +189,7 @@
 
 .project__description {
   line-height: 1.5;
+  padding-bottom: 16px;
   @media (width < 768px) {
     text-align: left;
   }
@@ -196,6 +197,13 @@
   font-size: 16px;
   @media (width >= 1060px) {
     font-size: 20px;
+  }
+}
+
+
+.project__link:hover {
+  .fa.fa-arrow-up {
+    color: white;
   }
 }
 
@@ -236,10 +244,6 @@
 
     #envelope {
       fill:#0f1317;
-    }
-
-    .stars svg.star {
-      fill: #f4e98c;
     }
   }
 

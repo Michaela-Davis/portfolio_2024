@@ -1,4 +1,5 @@
 import { Review } from './components/Review';
+import { Link } from 'react-router';
 import './App.css';
 
 function App() {
@@ -41,7 +42,7 @@ return (
       <h2 className="section__header">Projects</h2>
       <div className="projects__wrapper">
         <section className='project'>
-          <a href="/rocket" className="project__link">
+          <a href="/rocket" className="project__img--overlay-text">
             <img src='/assets/screenshots/rocket-mobile.png' className='project__thumbnail' alt='Rocket Mortgage' />
             <p className="overlay__text">Learn more <i className="fa fa-arrow-up" aria-hidden="true"></i></p>
           </a>
@@ -50,10 +51,11 @@ return (
           <p className='project__description'>
             Rocket Design System (RDS) engineering team member for the Rocket Family of Companies. RDS serves over 45 products within the Rocket Family of Companies, including Rocket Mortgage, Rocket Auto Loans, and Rocket Money. I built and maintained UI components in React and Angular, documented and tested them, and collaborated with design to improve clarity and user experience. I created detailed engineering blueprints, led team discussions on technical paths, and developed a comprehensive video guide for onboarding engineers to the React library of the design system.
           </p>
+          <Link to="/rocket" className="project__link">Learn more <i className="fa fa-arrow-up" aria-hidden="true"></i></Link>
         </section>
 
         <section className='project'>
-          <a href="/puppet" className="project__link">
+          <a href="/puppet" className="project__img--overlay-text">
             <img src='/assets/screenshots/puppet-mobile.png' className='project__thumbnail' alt='Puppet homepage' />
             <p className="overlay__text">Learn more <i className="fa fa-arrow-up" aria-hidden="true"></i></p>
           </a>
@@ -62,10 +64,15 @@ return (
           <p className='project__description'>
             I was the co-maintainer of Puppet.com, a JAMstack site consisting of a decoupled custom React front end with a WordPress back end and many integrations, such as Greenhouse and Marketo. My responsibilities include web engineering, page building, training, documentation, UI/UX and design implementation, analytics, content authoring support, and interfacing with stakeholders in departments across the company. I also created engaging animated experiences like the Puppetize timeline and provided training, documentation, and support to streamline the page-building process for content authors.
           </p>
+          <Link to="/puppet" className="project__link">Learn more <i className="fa fa-arrow-up" aria-hidden="true"></i></Link>
         </section>
 
         <section className='project'>
-          <a href="/aaa" className="project__link">
+          {/* <Link to="/aaa" className="project__img--overlay-text">Learn more <i className="fa fa-arrow-up" aria-hidden="true"></i>
+            <img src='/assets/screenshots/mwg-aaa-mobile.png' className='project__thumbnail' alt='AAA Mountain West Group homepage' />
+          <p className="overlay__text">Learn more <i className="fa fa-arrow-up" aria-hidden="true"></i></p>
+          </Link> */}
+          <a href="/aaa" className="project__img--overlay-text">
             <img src='/assets/screenshots/mwg-aaa-mobile.png' className='project__thumbnail' alt='AAA Mountain West Group homepage' />
             <p className="overlay__text">Learn more <i className="fa fa-arrow-up" aria-hidden="true"></i></p>
           </a>
@@ -74,6 +81,7 @@ return (
           <p className='project__description'>
             I reskinned previous Drupal sites, primarily leveraging PatternLab to maintain consistency and streamline the design process. I also built reusable components actively in use on <a href="https://www.mwg.aaa.com/" target="_blank" rel="noopener noreferrer">mwg.aaa.com</a>, enhancing the site’s functionality and user experience. I created an internal cookie tool that simplifies working on sites tied to different zip codes, which helped improve efficiency. Additionally, I delivered “Gherkin: A Primer” presentations to AAA Project Managers and the local Drupal User Group, teaching them how to write Gherkin testing statements, and fostering better alignment between AAA PMs and engineers.
           </p>
+          <Link to="/aaa" className="project__link">Learn more <i className="fa fa-arrow-up" aria-hidden="true"></i></Link>
         </section>
       </div>
     </div>
