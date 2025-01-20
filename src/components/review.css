@@ -37,6 +37,7 @@
   position: relative;
   font-size: 16px;
   line-height: 1.50;
+  font-weight: normal;
 }
 
 /* MODE - Light mode */
@@ -52,6 +53,10 @@
 
     .review__title {
       color: gray;
+    }
+
+    .review__body:hover {
+      color: #3EB489;
     }
   }
 }
