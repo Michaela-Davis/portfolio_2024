@@ -1,5 +1,6 @@
 import "./work.css";
 
+// TO DO: add reviews from coworkers below
 interface WorkProps {
   imgURL: string;
   img2URL: string;
