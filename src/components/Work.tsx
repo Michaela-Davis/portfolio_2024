@@ -31,7 +31,7 @@ export const Work: React.FC<WorkProps> = ({ imgURL, img2URL, imgAlt, img2Alt, co
             <div className="work__info-item">
               <p><span className="grayText">Scope:</span>  {scope}</p>
               <p><span className="grayText">Role:</span> {role}</p>
-              <p><span className="grayText">Year:</span>Year: {year}</p>
+              <p><span className="grayText">Year:</span> {year}</p>
               <p><span className="grayText">Live:</span> <a href={live}>{live}</a></p>
             </div>
             <div className="work__info-item">
